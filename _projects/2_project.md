@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
+title: Mini-Inspection-drone design , build and control. 
+description: Mini-Inspection-drone design , build and control. 
 img: assets/img/inspection_drone.png
 importance: 2
 category: Supervision

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: UNav-Sim
+description: High Fidelty Underwater Robotics Simulator.
 img: assets/img/UNavSim_logo.png
 importance: 3
 category: Phd
