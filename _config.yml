@@ -28,7 +28,7 @@ highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-them
 highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
-repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: dark       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
   enabled: true
@@ -141,7 +141,7 @@ giscus:
   strict:                      # use strict identification mode
   reactions_enabled:           # enable (1) or disable (0) emoji reactions
   input_position:         # whether to display input form below (bottom) or above (top) the comments
-  theme:   # name of the color scheme (preferred works well with al-folio light/dark mode)
+  theme: dark  # name of the color scheme (preferred works well with al-folio light/dark mode)
   emit_metadata:
   lang: en
 
