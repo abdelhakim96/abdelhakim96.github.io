@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - abdelhakim96
+  - open-airlab
+
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - open-airlab/UNav-Sim
+  - open-airlab/VTNMPC-Autonomous-Wind-Turbine-Inspection
+
