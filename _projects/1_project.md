@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Autonomous Wind Turbine Inspection
+description: Autonomous Wind Turbine Inspection Enabled by VT-NMPC 
 img: assets/img/12.jpg
 importance: 1
 category: work
@@ -16,8 +16,8 @@ To give your project a background in the portfolio page, just add the img tag to
     ---
     layout: page
     title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
+    description: We provide a general inspection framework, that takes the dimensions of the wind turbine as input, and provides the optimal attitude rate and thrust command to the drone to acheive time optimal coverage.The approach is modular, where the global plan for inspecting is provided through a time optimal graph based path planner. The output of the path planner is sequentially input to a NMPC with visual tracking costs, that allows the drone to acheive optimal pose relative to the surface for best heading, incidence angle and distance from the surface. More details on the method can be found soon through the paper submitted for publication.
+    img: /assets/img/abstract_vtmpc.png
     ---
 
 <div class="row">
