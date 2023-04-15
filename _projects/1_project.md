@@ -4,7 +4,7 @@ title: Autonomous Wind Turbine Inspection
 description: Autonomous Wind Turbine Inspection Enabled by VT-NMPC 
 img: assets/img/abstract_vtmpc.png
 importance: 1
-category: work
+category: Personal
 ---
 
 
