@@ -5,7 +5,7 @@ permalink: /projects/
 description: Some projects I am involved in
 nav: true
 nav_order: 2
-display_categories: [Personal, Supervision]
+display_categories: [Phd, Supervision]
 horizontal: false
 ---
 
