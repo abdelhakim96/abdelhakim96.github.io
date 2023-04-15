@@ -2,7 +2,7 @@
 layout: page
 title: Remotely Operated Towed Vehicle (ROTV) Modeling and Control.
 description: Remotely Operated Towed Vehicle (ROTV) Modeling and Control.
-img: 
+img: assets/img/11.png
 redirect: https://unsplash.com
 importance: 3
 category: Supervision
