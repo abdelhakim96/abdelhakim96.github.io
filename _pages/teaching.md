@@ -10,7 +10,7 @@ nav_order: 5
 
 
 
-<!-- pages/projects.md -->
+<!-- pages/teaching.md -->
 <div class="courses">
 {%- if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
