@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Autonomous Wind Turbine Inspection
-description: Autonomous Wind Turbine Inspection Enabled by VT-NMPC 
-img: assets/img/abstract_vtmpc.png
+title: Control systems theory
+description: Feedback diagram
+img: assets/img/feedback.jpg
 importance: 1
 category: Phd
 ---
@@ -12,11 +12,11 @@ category: Phd
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/abstract_vtmpc.png" title="Autonomous inspection framework" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/quanser.jpg" title="Quanser system" %}
     </div>
 </div>
 <div class="caption">
-    Autonomous inspection framework.
+    Control system theory.
 </div>
 
 
