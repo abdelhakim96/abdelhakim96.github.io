@@ -6,4 +6,5 @@ github_users:
 github_repos:
   - open-airlab/UNav-Sim
   - open-airlab/VTNMPC-Autonomous-Wind-Turbine-Inspection
+  - abdelhakim96/Dynamic-Obstacle-Avoidance-MPC
 
