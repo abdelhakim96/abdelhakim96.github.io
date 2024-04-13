@@ -2,24 +2,46 @@
 layout: about
 title: about
 permalink: /
-subtitle:  About Me
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  address: >
-    <p>Aarhus Universitet, Bygning 5125 (Edison), 300</p>
-    <p>Aarhus, Denmark</p>
-
-news: false  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+subtitle: "About Me"
 ---
 
+<script>
+const textToType = [
+  "I'm an Industrial Ph.D. student at Aarhus University/EIVA in Denmark,",
+  "on a mission to take underwater robotics to the next level.",
+  "My research interests are learning-based optimal control,",
+  "modeling, and robotics in general."
+];
 
-I'm an Industrial Ph.D. student at Aarhus University/EIVA in Denmark, on a mission to take underwater robotics to the next level. My research interests are learning-based optimal control, modeling and robotics in general.
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
+function typeText() {
+  const currentText = textToType[textIndex];
+  if (!isDeleting && charIndex <= currentText.length) {
+    document.getElementById('typing-text').innerHTML = currentText.substring(0, charIndex);
+    charIndex++;
+    setTimeout(typeText, 100);
+  } else if (isDeleting && charIndex >= 0) {
+    document.getElementById('typing-text').innerHTML = currentText.substring(0, charIndex);
+    charIndex--;
+    setTimeout(typeText, 50);
+  } else {
+    isDeleting = !isDeleting;
+    if (!isDeleting) {
+      textIndex = (textIndex + 1) % textToType.length;
+    }
+    setTimeout(typeText, 500);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', typeText);
+</script>
+
+<div class="typing-container">
+  <p id="typing-text"></p>
+  <span id="typing-cursor"></span>
+</div>
 
 
