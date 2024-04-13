@@ -2,8 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: "About Me"
+subtitle: About Me
 ---
+
+<div class="typing-container">
+  <img src="prof_pic.jpg" alt="Profile Picture" align="right" style="width: 200px; height: auto;">
+  <p id="typing-text"></p>
+  <span id="typing-cursor"></span>
+</div>
 
 <script>
 const textToType = [
@@ -22,26 +28,19 @@ function typeText() {
   if (!isDeleting && charIndex <= currentText.length) {
     document.getElementById('typing-text').innerHTML = currentText.substring(0, charIndex);
     charIndex++;
-    setTimeout(typeText, 100);
+    setTimeout(typeText, 50); // Faster typing speed
   } else if (isDeleting && charIndex >= 0) {
     document.getElementById('typing-text').innerHTML = currentText.substring(0, charIndex);
     charIndex--;
-    setTimeout(typeText, 50);
+    setTimeout(typeText, 25); // Faster deleting speed
   } else {
     isDeleting = !isDeleting;
     if (!isDeleting) {
       textIndex = (textIndex + 1) % textToType.length;
     }
-    setTimeout(typeText, 500);
+    setTimeout(typeText, 250); // Pause between sentences
   }
 }
 
 document.addEventListener('DOMContentLoaded', typeText);
 </script>
-
-<div class="typing-container">
-  <p id="typing-text"></p>
-  <span id="typing-cursor"></span>
-</div>
-
-
