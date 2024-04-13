@@ -6,7 +6,7 @@ subtitle: About Me
 ---
 
 <div class="typing-container">
-  <img src="prof_pic.jpg" alt="Profile Picture" align="right" style="width: 200px; height: auto;">
+  <img src="/assets/img/prof_pic.jpg" alt="Profile Picture" align="right" style="width: 200px; height: auto;">
   <p id="typing-text"></p>
   <span id="typing-cursor"></span>
 </div>
