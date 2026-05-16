@@ -100,7 +100,7 @@
                         <!-- Start text slide -->
                         
                         <div class="mu-featured-content">
-                            <p>Industrial Ph.D. researcher in learning-based optimal control and autonomous systems at Aarhus University and EIVA (Denmark).</p>  
+                            <p>Postdoctoral researcher in learning-based optimal control and autonomous robotics at Aarhus University (Denmark).</p>
                             <a href="#mu-portfolio" class="mu-primary-btn view-my-work-btn">VIEW MY WORK</a>
                         </div>
 
@@ -126,8 +126,8 @@
 				<div class="mu-about-header">
 				    <h2 class="mu-heading-title">ABOUT ME</h2>
 				    <span class="mu-header-dot"></span>
-				    <p>My name is Abdelhakim Amer. I am a researcher in <strong>optimal control in robotics</strong>.</p>
-				    <p>Currently, I am conducting my Ph.D. research on learning-based optimal control applied to underwater robotics. More specifically, I am working on combining stochastic learning techniques like Gaussian process with model predictive control to improve performance and safety. I'm fortunate to be conducting my Ph.D. research with <a href="https://international.au.dk/" style="color: blue; text-decoration: underline;">Aarhus University</a> and <a href="https://www.eiva.com/" style="color: blue; text-decoration: underline;">EIVA A/S</a>, a renowned industry leader in the field.</p>
+				    <p>My name is Abdelhakim Amer. I am a researcher in <strong>learning-based optimal control for robotics</strong>.</p>
+				    <p>I am currently a <strong>postdoctoral researcher</strong> at <a href="https://international.au.dk/" style="color: blue; text-decoration: underline;">Aarhus University</a>, where I also completed my industrial PhD with <a href="https://www.eiva.com/" style="color: blue; text-decoration: underline;">EIVA A/S</a>. My research combines stochastic learning techniques such as Gaussian processes and physics-informed neural networks with model predictive control to improve the performance and safety of autonomous underwater vehicles. I have also been a visiting scholar with the Underwater Robotics group at the <a href="https://www.dfki.de/en/web/research/research-departments/marine-perception" style="color: blue; text-decoration: underline;">German Research Center for Artificial Intelligence (DFKI)</a> and the Automatic Control group at <a href="https://www.uni-paderborn.de/en/" style="color: blue; text-decoration: underline;">the University of Paderborn</a>.</p>
 				</div>
                             <!-- Start About Us Content -->
                             <div class="mu-about-content">
@@ -166,7 +166,7 @@
                                             </div>
 
                                             <!-- Download Resume Button -->
-                                            <a href="assets/documents/New_CV.pdf" class="mu-resume-btn">Download My Resume</a>
+                                            <a href="assets/documents/Hakim_CV_2pages.pdf" class="mu-resume-btn" target="_blank">Download My CV</a>
 
                                         </div>
                                     </div>
@@ -190,19 +190,41 @@
                     <div class="mu-education-content">
                         <h2 class="mu-heading-title">Education</h2>
                         <ul>
-                            <li>Bachelor in Mechanical Engineering - The American University in Cairo (2013-2018)</li>
-                            <li>MSc. in Mechanical Engineering - TU Delft (2018-2021)</li>
-                            <li>PhD in Robotics - Aarhus University (2022-Now)</li>
+                            <li>Bachelor in Mechanical Engineering (High Honors) — The American University in Cairo (2013–2018)</li>
+                            <li>MSc. in Mechanical Engineering — Delft University of Technology (2018–2021)</li>
+                            <li>PhD in Robotics &amp; A.I — Aarhus University / EIVA A/S (2022–2025)</li>
+                            <li>Postdoctoral Researcher — Aarhus University (2025–Now)</li>
                         </ul>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="assets/images/AUC1.png" alt="AUC Logo" class="img-responsive">
+                        <div class="affiliation-logos">
+                            <div class="logo-item">
+                                <img src="assets/images/AUC1.png" alt="AUC Logo">
+                                <span class="logo-label">AUC</span>
                             </div>
-                            <div class="col-md-4">
-                                <img src="assets/images/delft.png" alt="TU Delft Logo" class="img-responsive">
+                            <div class="logo-item">
+                                <img src="assets/images/delft.png" alt="TU Delft Logo">
+                                <span class="logo-label">TU Delft</span>
                             </div>
-                            <div class="col-md-4">
-                                <img src="assets/images/au.png" alt="Aarhus University Logo" class="img-responsive">
+                            <div class="logo-item">
+                                <img src="assets/images/au.png" alt="Aarhus University Logo">
+                                <span class="logo-label">Aarhus</span>
+                            </div>
+                        </div>
+
+                        <div class="visiting-block">
+                            <h3>Visiting Scholar</h3>
+                            <ul>
+                                <li>Underwater Robotics Research Group — German Research Center for Artificial Intelligence (DFKI), Germany (2025, 3 months)</li>
+                                <li>Automatic Control Research Group — University of Paderborn, Germany (2023, 1 month)</li>
+                            </ul>
+                            <div class="affiliation-logos">
+                                <div class="logo-item">
+                                    <img src="assets/images/dfki.png" alt="DFKI Logo">
+                                    <span class="logo-label">DFKI</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/images/paderborn.jpg" alt="University of Paderborn Logo">
+                                    <span class="logo-label">Paderborn</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -271,99 +293,278 @@
                                 <span class="mu-header-dot"></span>
                             </div>
 
-                            <!-- Start Portfolio Filter -->
-                            <div class="mu-portfolio-filter-area">
-                                <ul class="mu-simplefilter">
-                                    <li class="active" data-filter="all">All</li>
-                                    <li data-filter="1">Control and Path Planning</li>
-                                    <li data-filter="2">System Identification</li>
-                                    <li data-filter="3">Computer Vision</li>
-                                    <li data-filter="4">Bio-Inspired Design</li>
-                                    <li data-filter="6">Supervision</li>
-                                </ul>
+                            <!-- Filter bar -->
+                            <div class="project-filter">
+                                <button class="filter-btn active" data-filter="all">All</button>
+                                <button class="filter-btn" data-filter="control">Control</button>
+                                <button class="filter-btn" data-filter="learning">Learning</button>
+                                <button class="filter-btn" data-filter="perception">Perception</button>
+                                <button class="filter-btn" data-filter="design">Mechanical Design</button>
                             </div>
 
-<!-- Start Portfolio Content -->
-<div class="mu-portfolio-content">
-    <div class="filtr-container">
-        <!-- VTNMPC Project -->
-        <div class="filtr-item" data-category="1">
-            <!-- Link the gif vtmpc.gif -->
-            <img class="portfolio-image" src="assets/images/vtmpc.gif" alt="VTNMPC Project">
-            <div class="mu-filter-item-content">
-                <h3 class="mu-filter-item-title">VTNMPC Project</h3>
-                <p>Visual Tracking Model Predictive Control for Autonomous Wind Turbine Inspection</p>
-            </div>
-        </div>
-        
-        <!-- Side by side container for Drone and Towed ROV -->
-        <div class="side-by-side-container">
-            <!-- Seavis Towed ROV -->
-            <div class="filtr-item" data-category="6">
-                <img class="portfolio-image" src="assets/images/seavis.PNG" alt="Seavis Towed ROV">
-                <div class="mu-filter-item-content">
-                    <h3 class="mu-filter-item-title">Seavis Towed ROV</h3>
-                    <p>Gain-scheduled LQR Controller for a Towed ROV.</p>
-                </div>
-            </div>
+                            <!-- Project grid -->
+                            <div class="project-grid">
 
-            <!-- Drone Building Project -->
-            <div class="filtr-item" data-category="6">
-                <img class="portfolio-image small-drone" src="assets/images/drone.png.jpeg" alt="Drone Building Project">
-                <div class="mu-filter-item-content">
-                    <h3 class="mu-filter-item-title">Drone Building Project</h3>
-                    <p>Mini-Autonomous Inspection Drone Design and Build.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                                <!-- REACT (ICRA 2026) -->
+                                <div class="project-card" data-categories="control learning">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/REACT_method.png" alt="REACT method block diagram">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">REACT</h3>
+                                        <div class="project-venue">IEEE ICRA 2026 (accepted)</div>
+                                        <p class="project-summary">Real-time entanglement-aware coverage path planning for tethered underwater vehicles. A geometry-based tether model on an SDF map enables online replanning that prevents tether entanglement around 3D structures, completing inspection missions ~20% faster than baseline planners while removing the need for post-mission disentanglement.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="https://abdelhakim96.github.io/REACT/" target="_blank"><i class="fa fa-external-link"></i> Project Page</a>
+                                            <a class="project-link code-link" href="https://github.com/abdelhakim96" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- SeaVis (ECC 2026) -->
+                                <div class="project-card" data-categories="control">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/SeaVis_method.png" alt="SeaVis gain-scheduled LQR block diagram">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">SeaVis</h3>
+                                        <div class="project-venue">ECC 2026 (under review)</div>
+                                        <p class="project-summary">Modelling and gain-scheduled LQR control of a remotely operated towed vehicle for seabed visualization and mapping. Includes a full simulation-to-real pipeline with HoloOcean, system identification of the towed body, and tracking of arbitrary seabed profiles within ±5°.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="assets/papers/SeaVis.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Paper</a>
+                                            <a class="project-link code-link" href="https://github.com/abdelhakim96" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TCST / Learning-based MPC -->
+                                <div class="project-card" data-categories="control learning">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/TCST_method.png" alt="Learning-based MPC with Dynamic Forgetting GP method figure">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">Learning-based MPC with Dynamic Forgetting GP</h3>
+                                        <div class="project-venue">IEEE Transactions on Control Systems Technology, 2025</div>
+                                        <p class="project-summary">A learning-based model predictive controller for autonomous underwater vehicles that combines sparse Gaussian processes with an adaptive forgetting factor, so the disturbance model dynamically discards stale data when the environment changes. Validated on a BlueROV in simulation and experiments.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="https://doi.org/10.1109/TCST.2025.3539218" target="_blank"><i class="fa fa-file-pdf-o"></i> IEEE Xplore</a>
+                                            <a class="project-link code-link" href="https://github.com/abdelhakim96" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PINS / Physics-Informed NN -->
+                                <div class="project-card" data-categories="learning">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/PINS_method.png" alt="Physics-informed neural network architecture">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">PINS — Physics-Informed Neural Networks with Control</h3>
+                                        <div class="project-venue">IJCNN 2025</div>
+                                        <p class="project-summary">Data-efficient modelling of underwater vehicle dynamics using physics-informed neural networks that embed the rigid-body equations of motion directly into the loss. The learned model is used inside a model predictive controller for trajectory tracking.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="https://arxiv.org/abs/2504.20019" target="_blank"><i class="fa fa-file-pdf-o"></i> arXiv</a>
+                                            <a class="project-link code-link" href="https://github.com/abdelhakim96" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- VTNMPC -->
+                                <div class="project-card" data-categories="control perception">
+                                    <div class="project-media">
+                                        <img src="assets/images/vtmpc.gif" alt="Visual tracking NMPC for wind turbine inspection">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">VTNMPC — Visual Tracking NMPC</h3>
+                                        <div class="project-venue">ICAR 2023</div>
+                                        <p class="project-summary">A visual-servo based nonlinear model predictive control method for autonomous wind turbine inspection with a quadrotor. The controller keeps the blade centred in the camera frame while respecting input and safety constraints.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="https://doi.org/10.1109/ICAR58858.2023.10406329" target="_blank"><i class="fa fa-file-pdf-o"></i> IEEE Xplore</a>
+                                            <a class="project-link code-link" href="https://github.com/abdelhakim96" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- UNav-Sim -->
+                                <div class="project-card" data-categories="perception">
+                                    <div class="project-media">
+                                        <img src="assets/images/unavsim.png" alt="UNav-Sim underwater simulator">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">UNav-Sim</h3>
+                                        <div class="project-venue">ICAR 2023</div>
+                                        <p class="project-summary">A visually realistic underwater robotics simulator built on Unreal Engine, designed for autonomous navigation, control, and synthetic data generation. Open-sourced and used as a benchmark by other underwater robotics groups.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="https://doi.org/10.1109/ICAR58858.2023.10406819" target="_blank"><i class="fa fa-file-pdf-o"></i> IEEE Xplore</a>
+                                            <a class="project-link code-link" href="https://github.com/open-airlab/UNav-Sim" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Obstacle avoidance (MAV) -->
+                                <div class="project-card" data-categories="perception control">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/Obstacle_method.png" alt="DelFly obstacle avoidance flow chart">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">Optical-Flow Obstacle Avoidance for Micro Air Vehicles</h3>
+                                        <div class="project-venue">MSc. Project — TU Delft</div>
+                                        <p class="project-summary">Vision-based obstacle avoidance for the DelFly Explorer flapping-wing MAV using sparse optical flow. The navigation module reacts to oncoming obstacles in real time on a constrained on-board processor.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="assets/documents/obstacle_avoidance.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Gate detection -->
+                                <div class="project-card" data-categories="perception">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/Gate_method.jpg" alt="Gate detection algorithm flow chart">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">Drone Race Gate Detection</h3>
+                                        <div class="project-venue">MSc. Project — TU Delft</div>
+                                        <p class="project-summary">Real-time gate detection for autonomous drone racing using a lightweight computer vision pipeline, benchmarked with ROC analysis against ORB-SLAM-style feature detectors.</p>
+                                        <div class="project-links">
+                                            <a class="project-link code-link" href="https://github.com/abdelhakim96" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Ship Path Planning -->
+                                <div class="project-card" data-categories="control">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/PathPlanning_method.png" alt="Geometric path planning for autonomous vessels">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">Path Planning for Autonomous Vessels</h3>
+                                        <div class="project-venue">Internship — Royal IHC</div>
+                                        <p class="project-summary">Global path planning for autonomous surface vessels combining roadmap and sampling-based methods (Voronoi, Visibility Graph, Dijkstra) with smooth turning manoeuvres. Done as a graduate intern at Royal IHC.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="assets/documents/Path_Planning_for_Autonomous_Vessel.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Precision Mechanism Design (former Bio-Inspired) -->
+                                <div class="project-card" data-categories="design">
+                                    <div class="project-media">
+                                        <img src="assets/abstracts/Precision_method.png" alt="Variable-aperture mechanism concept">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">Precision Mechanism Design</h3>
+                                        <div class="project-venue">MSc. Project — TU Delft</div>
+                                        <p class="project-summary">Bio-inspired precision mechanism for an improved serving tray that attaches and detaches glassware on demand. Includes nature-driven concept generation (ACCREx method), variable-aperture mechanism design, prototyping and gripping-strength experiments on different glass geometries.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="assets/documents/Bio_Inspired_Design.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Supervision: SeaVis ROV -->
+                                <div class="project-card" data-categories="design control">
+                                    <div class="project-media">
+                                        <img src="assets/images/seavis.PNG" alt="Towed ROV student project">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">Towed ROV — Student Supervision</h3>
+                                        <div class="project-venue">MSc. Thesis Supervision — Aarhus University</div>
+                                        <p class="project-summary">Supervised the design and gain-scheduled LQR controller development for a remotely operated towed vehicle, in collaboration with EIVA A/S. Outcome contributed to the SeaVis paper.</p>
+                                        <div class="project-links">
+                                            <a class="project-link pdf-link" href="assets/papers/SeaVis.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Related Paper</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Supervision: Drone Build -->
+                                <div class="project-card" data-categories="design">
+                                    <div class="project-media">
+                                        <img src="assets/images/drone.png.jpeg" alt="Mini autonomous inspection drone">
+                                    </div>
+                                    <div class="project-body">
+                                        <h3 class="project-title">Mini Autonomous Inspection Drone — Student Supervision</h3>
+                                        <div class="project-venue">Student Project — Aarhus University</div>
+                                        <p class="project-summary">Supervised the mechanical design, build and autonomy stack of a mini quadrotor for indoor inspection tasks, including PX4 integration and onboard perception.</p>
+                                        <div class="project-links">
+                                            <a class="project-link code-link" href="https://github.com/abdelhakim96" target="_blank"><i class="fa fa-github"></i> Code</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- End Project grid -->
+
+                            <script>
+                            (function () {
+                                var buttons = document.querySelectorAll('.project-filter .filter-btn');
+                                var cards = document.querySelectorAll('.project-grid .project-card');
+                                buttons.forEach(function (btn) {
+                                    btn.addEventListener('click', function () {
+                                        var filter = btn.getAttribute('data-filter');
+                                        buttons.forEach(function (b) { b.classList.remove('active'); });
+                                        btn.classList.add('active');
+                                        cards.forEach(function (card) {
+                                            var cats = (card.getAttribute('data-categories') || '').split(/\s+/);
+                                            if (filter === 'all' || cats.indexOf(filter) !== -1) {
+                                                card.style.display = '';
+                                            } else {
+                                                card.style.display = 'none';
+                                            }
+                                        });
+                                    });
+                                });
+                            })();
+                            </script>
 
                             
 
-<!-- Start About Us Content -->
-<div class="mu-about-content">
-    <div class="row">
-        <div class="col-md-6"></div>
-
-        <div class="mu-about-content-right">
-
-            <!-- Start skills progress bar -->
-            <div class="mu-skill-progress-bar">
-                <span><b>A. Amer</b>, M. Mehndiratta, Y. Brodskiy, and E. Kayacan. 
-                "Empowering Autonomous Underwater Vehicles Using Learning-based Model Predictive Control 
-                With Dynamic Forgetting Gaussian Processes." IEEE Transactions on Control Systems Technology, DOI: TBD.</span>
-                <br>
-                <span>W. Liang, <b>A. Amer</b>, M. Mehndiratta, Z. Chen, B. Yao, and E. Kayacan. 
-                "Adaptive Robust Control Integrated With Gaussian Processes for Quadrotors: 
-                Enhanced Accuracy, Fault Tolerance and Anti-Disturbance," in 
-                IEEE Transactions on Systems, Man, and Cybernetics: Systems, 
-                doi: 10.1109/TSMC.2025.3539707.</span>
-                <br>
-                <span><b>A. Amer</b>, M. Mehndiratta, J. Sejersen, H. Pham, and 
-                E. Kayacan. "Visual Tracking Nonlinear Model Predictive Control Method for Autonomous Wind Turbine Inspection." 
-                In 2023 21st International Conference on Advanced Robotics (ICAR), pp. 431-438. IEEE, 2023.</span>
-                <br>
-                <span><b>A. Amer</b>, O. Álvarez-Tuñón, H. Uğurlu, J. Sejersen, 
-                Y. Brodskiy, and E. Kayacan. "UNav-Sim: A Visually Realistic Underwater Robotics Simulator 
-                and Synthetic Data-generation Framework." In 2023 21st International Conference on Advanced Robotics (ICAR), 
-                pp. 570-576. IEEE, 2023.</span>
-            </div>
-
-            <!-- Download Resume Button -->
-            <a href="https://scholar.google.com/citations?user=kwstCR0AAAAJ&hl=en" class="mu-resume-btn">Google Scholar</a>
-
-        </div>
-    </div>
-</div>
-<!-- End About Us Content -->
-
-                        
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Testimonials -->
+        <!-- End Portfolio -->
+
+        <!-- Start Publications -->
+        <section id="mu-publications">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-portfolio-area">
+
+                            <div class="mu-portfolio-header">
+                                <h2 class="mu-heading-title">PUBLICATIONS</h2>
+                                <span class="mu-header-dot"></span>
+                            </div>
+
+                            <div class="mu-skill-progress-bar" style="margin-top: 30px;">
+                                <span><b>A. Amer</b>, A. Alstrup, F. Toft, Y. Brodskiy, A. Sarabakha, and E. Kayacan. "SeaVis: Modeling and Control of a Remotely Operated Towed Vehicle for Seabed Visualization and Mapping." <em>European Control Conference (ECC)</em>, 2026 (under review).</span>
+                                <br>
+                                <span><b>A. Amer</b> and A. Sarabakha. "Dynamic System Emulation: Fixed-Wing Dynamics on a Multicopter." <em>IEEE Conference on Control Technology and Applications (CCTA)</em>, 2026 (under review).</span>
+                                <br>
+                                <span><b>A. Amer</b>, M. Mehndiratta, Y. Brodskiy, and E. Kayacan. "REACT: Real-Time Entanglement-Aware Coverage Path Planning for Tethered Underwater Vehicles." <em>IEEE International Conference on Robotics &amp; Automation (ICRA)</em>, 2026 (accepted).</span>
+                                <br>
+                                <span><b>A. Amer</b>, M. Mehndiratta, Y. Brodskiy, and E. Kayacan. "Empowering Autonomous Underwater Vehicles Using Learning-Based Model Predictive Control With Dynamic Forgetting Gaussian Processes." <em>IEEE Transactions on Control Systems Technology</em>, 2025. <a href="https://doi.org/10.1109/TCST.2025.3539218" target="_blank">doi:10.1109/TCST.2025.3539218</a>.</span>
+                                <br>
+                                <span>W. Liang, <b>A. Amer</b>, M. Mehndiratta, Z. Chen, B. Yao, and E. Kayacan. "Adaptive Robust Control Integrated With Gaussian Processes for Quadrotors: Enhanced Accuracy, Fault Tolerance and Anti-Disturbance." <em>IEEE Transactions on Systems, Man, and Cybernetics: Systems</em>, vol. 55, no. 5, pp. 3235–3248, May 2025. <a href="https://doi.org/10.1109/TSMC.2025.3539707" target="_blank">doi:10.1109/TSMC.2025.3539707</a>.</span>
+                                <br>
+                                <span><b>A. Amer</b>, D. Falsegar, Y. Brodskiy, and A. Sarabakha. "Modelling of Underwater Vehicles Using Physics-Informed Neural Networks With Control." <em>International Joint Conference on Neural Networks (IJCNN)</em>, 2025. <a href="https://arxiv.org/abs/2504.20019" target="_blank">arXiv:2504.20019</a>.</span>
+                                <br>
+                                <span><b>A. Amer</b>, M. Mehndiratta, J. L. F. Sejersen, H. X. Pham, and E. Kayacan. "Visual Tracking Nonlinear Model Predictive Control Method for Autonomous Wind Turbine Inspection." <em>21st International Conference on Advanced Robotics (ICAR)</em>, pp. 431–438, 2023. <a href="https://doi.org/10.1109/ICAR58858.2023.10406329" target="_blank">doi:10.1109/ICAR58858.2023.10406329</a>.</span>
+                                <br>
+                                <span><b>A. Amer</b>, O. Álvarez-Tuñón, H. İ. Uğurlu, J. L. F. Sejersen, Y. Brodskiy, and E. Kayacan. "UNav-Sim: A Visually Realistic Underwater Robotics Simulator and Synthetic Data-Generation Framework." <em>21st International Conference on Advanced Robotics (ICAR)</em>, pp. 570–576, 2023. <a href="https://doi.org/10.1109/ICAR58858.2023.10406819" target="_blank">doi:10.1109/ICAR58858.2023.10406819</a>.</span>
+                            </div>
+
+                            <div style="text-align: center; margin-top: 25px;">
+                                <a href="https://scholar.google.com/citations?user=kwstCR0AAAAJ&hl=en" class="mu-resume-btn" target="_blank">Google Scholar</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Publications -->
         
 
 
