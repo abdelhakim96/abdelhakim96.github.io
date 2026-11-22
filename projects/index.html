@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Abdelhakim Amer</title>
+  <meta name="description" content="Robotics research and engineering projects by Abdelhakim Amer: underwater ROVs, aerial drones, learning-based MPC, tether-aware planning, and simulation.">
+  <link rel="icon" href="/assets/favicon.ico">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/academic.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="masthead__brand" href="/">Abdelhakim Amer</a>
+      <nav class="masthead__nav" id="site-nav" aria-label="Primary">
+        <a class="masthead__link" href="/">Home</a>
+        <a class="masthead__link" href="/publications/">Publications</a>
+        <a class="masthead__link active" href="/projects/">Projects</a>
+        <a class="masthead__link" href="/teaching/">Teaching &amp; Service</a>
+        <a class="masthead__link" href="/cv/">CV</a>
+      </nav>
+      <div class="masthead__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme"></button>
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout-shell">
+    <aside class="sidebar">
+      <div class="author-avatar-wrap">
+        <img class="author-avatar" src="/assets/media/hakim_avatar.jpg" alt="Abdelhakim Amer">
+      </div>
+      <div class="author-meta">
+        <h2 class="author-name">Abdelhakim Amer</h2>
+        <p class="author-role">
+          <strong>Member of Technical Team</strong>, <a href="https://nestai.com/" target="_blank" rel="noopener">NestAI</a><br>
+          Researcher, <a href="https://www.aicentre.dk/people/abdelhakim-amer" target="_blank" rel="noopener">Pioneer Centre for AI</a><br>
+          Mentor, <a href="https://ddsa.dk/member/abdelhakim-amer/" target="_blank" rel="noopener">DDSA</a><br>
+          Ph.D. in Robotics, Aarhus University
+        </p>
+        <ul class="author-links">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Finland</span></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="#" data-email-user="abdelhakim" data-email-domain="aucegypt.edu">abdelhakim at aucegypt.edu</a></li>
+          <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=kwstCR0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><i class="fa-brands fa-github" aria-hidden="true"></i> <a href="https://github.com/abdelhakim96" target="_blank" rel="noopener">GitHub</a></li>
+          <li><i class="fa-brands fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/abdelhakim-amer/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><i class="fa-brands fa-researchgate" aria-hidden="true"></i> <a href="https://www.researchgate.net/profile/Abdelhakim-Amer-2" target="_blank" rel="noopener">ResearchGate</a></li>
+          <li><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> <a href="/assets/documents/New_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="page-content">
+      <h1 class="page-title">Research &amp; Engineering Projects</h1>
+      <p class="page-subtitle">
+        Selected systems, open-source simulators, and field robotics platforms across marine and aerial autonomy. Click any GIF or figure to enlarge.
+      </p>
+
+      <div class="filter-bar" data-filter-group=".project-card">
+        <button class="filter-pill active" type="button" data-filter="all">All</button>
+        <button class="filter-pill" type="button" data-filter="marine">Marine &amp; Underwater</button>
+        <button class="filter-pill" type="button" data-filter="aerial">Aerial Robotics</button>
+        <button class="filter-pill" type="button" data-filter="control">Control &amp; Planning</button>
+        <button class="filter-pill" type="button" data-filter="opensource">Simulation &amp; Open-Source</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 1. REACT -->
+        <article class="project-card" data-tags="marine control opensource">
+          <div class="project-media">
+            <img src="/assets/media/react.gif" alt="REACT Tether-Aware Coverage Planner">
+            <span class="gif-badge">GIF</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">2025–2026 &middot; Aarhus Univ., EIVA &amp; DFKI</div>
+            <h2 class="project-title">REACT: Entanglement-Aware 3D Coverage Planning for Tethered ROVs</h2>
+            <p class="project-desc">
+              Online coverage path planner for tethered underwater inspection vehicles. Combines signed-distance mapping (nvblox) with a fast geometric tether contact model to avoid cable wrapping and snagging on subsea structures, validated in tank trials at DFKI.
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="https://abdelhakim96.github.io/REACT/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Project Page</a>
+              <a class="pub-btn" href="https://arxiv.org/abs/2507.10204" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> ICRA 2026 Paper</a>
+              <a class="pub-btn" href="https://github.com/abdelhakim96/REACT" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Ghost Tracking DFL -->
+        <article class="project-card" data-tags="aerial control opensource">
+          <div class="project-media">
+            <img class="light-bg" src="/assets/media/dfl_cuban8.gif" alt="Ghost Tracking Fixed-Wing Emulation on Multicopter">
+            <span class="gif-badge">GIF</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">2026 &middot; Aerial Control &amp; Flight Emulation</div>
+            <h2 class="project-title">Ghost Tracking: Fixed-Wing Flight Emulation on a Multicopter</h2>
+            <p class="project-desc">
+              Exact dynamic feedback linearization (DFL) with singularity-robust inversion and a feasibility-enforcing reference governor, enabling a gimballed quadrotor to physically reproduce aggressive fixed-wing camera trajectories (loops, barrel rolls, Cuban-8).
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="https://arxiv.org/abs/2609.06520" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Paper</a>
+              <a class="pub-btn" href="https://github.com/abdelhakim96/Ghost_Tracking_DFL" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code &amp; Sims</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. DF-GP-MPC -->
+        <article class="project-card" data-tags="marine control">
+          <div class="project-media">
+            <img src="/assets/media/dfgpmpc_rov.gif" alt="Learning-Based GP-MPC on Underwater ROV">
+            <span class="gif-badge">GIF</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">2022–2025 &middot; Innovation Fund Denmark &amp; EIVA</div>
+            <h2 class="project-title">Online Dynamic-Forgetting GP-MPC for Autonomous Underwater Vehicles</h2>
+            <p class="project-desc">
+              Real-time nonlinear MPC augmented with online Gaussian Process residual dynamics and information-based data forgetting, adapting within seconds to unmodeled drag, tether forces, and ocean currents on BlueROV2 hardware.
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="https://doi.org/10.1109/TCST.2025.3539218" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> IEEE TCST Paper</a>
+              <a class="pub-btn" href="/assets/images/rov.mp4" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play"></i> Video</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. UNav-Sim -->
+        <article class="project-card" data-tags="marine opensource">
+          <div class="project-media">
+            <img src="/assets/media/unavsim_ocean.gif" alt="UNav-Sim Unreal Engine 5 Underwater Simulator">
+            <span class="gif-badge">GIF</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">2022–2023 &middot; Open-Source UE5 Simulator</div>
+            <h2 class="project-title">UNav-Sim: Photorealistic Underwater Robotics Simulator</h2>
+            <p class="project-desc">
+              Unreal Engine 5 and AirSim-based underwater simulator featuring realistic water caustics, turbidity, 6-DOF hydrodynamic vehicle physics, ROS 1/2 integration, and synthetic dataset generation for vision-based underwater SLAM and control.
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="https://github.com/open-airlab/UNav-Sim" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+              <a class="pub-btn" href="https://doi.org/10.1109/icar58858.2023.10406819" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> ICAR Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. VT-NMPC Wind Turbine Inspection -->
+        <article class="project-card" data-tags="aerial control opensource">
+          <div class="project-media">
+            <img src="/assets/media/vtmpc_opt.gif" alt="VT-NMPC Autonomous Wind Turbine Inspection">
+            <span class="gif-badge">GIF</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">2021–2023 &middot; Aarhus Univ. AiR Lab &amp; Upteko</div>
+            <h2 class="project-title">VT-NMPC: Autonomous Wind Turbine Inspection with UAVs</h2>
+            <p class="project-desc">
+              Perception-constrained nonlinear model predictive control framework enabling inspection drones to track wind turbine blades autonomously while keeping inspection targets centered in camera FOV under gusty wind conditions.
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="https://github.com/open-airlab/VTNMPC-Autonomous-Wind-Turbine-Inspection" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              <a class="pub-btn" href="https://doi.org/10.1109/icar58858.2023.10406329" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Paper</a>
+              <a class="pub-btn" href="/assets/images/vtmpc.mp4" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play"></i> Video</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. SeaVis Towed ROV -->
+        <article class="project-card" data-tags="marine control">
+          <div class="project-media">
+            <img src="/assets/media/seavis.png" alt="SeaVis Towed Underwater Vehicle">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">2023–2026 &middot; EIVA &amp; Aarhus University</div>
+            <h2 class="project-title">SeaVis: Gain-Scheduled LQR for a Seabed Mapping Towed Vehicle</h2>
+            <p class="project-desc">
+              Nonlinear hydrodynamic modeling and velocity-scheduled LQR control of a hydrofoil-actuated remotely operated towed vehicle (ROTV) for high-resolution seabed altitude tracking and optical mapping.
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="https://arxiv.org/abs/2605.14683" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> AIM 2026 Paper</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Open-Source Control & SLAM Toolkits -->
+        <article class="project-card" data-tags="control opensource aerial">
+          <div class="project-media">
+            <img class="light-bg" src="/assets/images/mpc.gif" alt="Open-Source MPC and SLAM Toolboxes">
+            <span class="gif-badge">GIF</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">Open-Source Robotics Software</div>
+            <h2 class="project-title">Real-Time MPC, ROS 2 Control &amp; Educational SLAM Suites</h2>
+            <p class="project-desc">
+              Open-source implementations including ACADO real-time NMPC in ROS 2, PX4 low-level offboard flight control, autonomous vessel path planning (Royal IHC), and <em>hello-slam</em> interactive Jupyter tutorials on Bayes/Kalman/Graph SLAM.
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="https://github.com/abdelhakim96/mpc_acado_ros2" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> mpc_acado_ros2</a>
+              <a class="pub-btn" href="https://github.com/abdelhakim96/hello-slam" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> hello-slam</a>
+              <a class="pub-btn" href="/assets/documents/Path_Planning_for_Autonomous_Vessel.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> Vessel Planning</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Hardware Prototyping: Inspection Drone & Flapping Wing -->
+        <article class="project-card" data-tags="aerial">
+          <div class="project-media">
+            <img src="/assets/images/drone.png.jpeg" alt="Custom Mini-Autonomous Inspection Drone">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">Hardware Design &amp; Aerodynamics</div>
+            <h2 class="project-title">Custom Inspection UAVs &amp; Bio-Inspired Flapping-Wing Optimization</h2>
+            <p class="project-desc">
+              End-to-end mechanical design, 3D-printed airframes, avionics integration, and onboard autonomy for compact indoor/industrial inspection quadrotors, alongside aerodynamic shape optimization for TU Delft's Atalanta FWMAV.
+            </p>
+            <div class="pub-links">
+              <a class="pub-btn" href="/assets/documents/Bio_Inspired_Design.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> FWMAV Thesis</a>
+              <a class="pub-btn" href="/assets/documents/obstacle_avoidance.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> Obstacle Avoidance</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2026 Abdelhakim Amer &middot; Hosted on GitHub Pages
+  </footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

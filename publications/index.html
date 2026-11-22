@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | Abdelhakim Amer</title>
+  <meta name="description" content="Publications of Abdelhakim Amer in optimal control, model predictive control, learning-based robotics, and autonomous aerial/marine vehicles.">
+  <link rel="icon" href="/assets/favicon.ico">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/academic.css">
+</head>
+<body>
+
+  <!-- Top Masthead -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="masthead__brand" href="/">Abdelhakim Amer</a>
+      <nav class="masthead__nav" id="site-nav" aria-label="Primary">
+        <a class="masthead__link" href="/">Home</a>
+        <a class="masthead__link active" href="/publications/">Publications</a>
+        <a class="masthead__link" href="/projects/">Projects</a>
+        <a class="masthead__link" href="/teaching/">Teaching &amp; Service</a>
+        <a class="masthead__link" href="/cv/">CV</a>
+      </nav>
+      <div class="masthead__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme"></button>
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout-shell">
+    <!-- Sticky Author Sidebar -->
+    <aside class="sidebar">
+      <div class="author-avatar-wrap">
+        <img class="author-avatar" src="/assets/media/hakim_avatar.jpg" alt="Abdelhakim Amer">
+      </div>
+      <div class="author-meta">
+        <h2 class="author-name">Abdelhakim Amer</h2>
+        <p class="author-role">
+          <strong>Member of Technical Team</strong>, <a href="https://nestai.com/" target="_blank" rel="noopener">NestAI</a><br>
+          Researcher, <a href="https://www.aicentre.dk/people/abdelhakim-amer" target="_blank" rel="noopener">Pioneer Centre for AI</a><br>
+          Mentor, <a href="https://ddsa.dk/member/abdelhakim-amer/" target="_blank" rel="noopener">DDSA</a><br>
+          Ph.D. in Robotics, Aarhus University
+        </p>
+        <ul class="author-links">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Finland</span></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="#" data-email-user="abdelhakim" data-email-domain="aucegypt.edu">abdelhakim at aucegypt.edu</a></li>
+          <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=kwstCR0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><i class="fa-brands fa-github" aria-hidden="true"></i> <a href="https://github.com/abdelhakim96" target="_blank" rel="noopener">GitHub</a></li>
+          <li><i class="fa-brands fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/abdelhakim-amer/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><i class="fa-brands fa-researchgate" aria-hidden="true"></i> <a href="https://www.researchgate.net/profile/Abdelhakim-Amer-2" target="_blank" rel="noopener">ResearchGate</a></li>
+          <li><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> <a href="/assets/documents/New_CV.pdf" target="_blank" rel="noopener">Curriculum Vitae</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="page-content">
+      <h1 class="page-title">Publications</h1>
+      <p class="page-subtitle">
+        Full list of articles and theses. For live citation metrics, visit my
+        <a href="https://scholar.google.com/citations?user=kwstCR0AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>.
+      </p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" data-filter-group=".pub-card">
+        <button class="filter-pill active" type="button" data-filter="all">All</button>
+        <button class="filter-pill" type="button" data-filter="journal">Journal Articles</button>
+        <button class="filter-pill" type="button" data-filter="conference">Conference Papers</button>
+        <button class="filter-pill" type="button" data-filter="preprint">Preprints &amp; Workshops</button>
+        <button class="filter-pill" type="button" data-filter="thesis">Theses</button>
+        <button class="filter-pill" type="button" data-filter="mpc">Optimal Control &amp; MPC</button>
+        <button class="filter-pill" type="button" data-filter="learning">Learning &amp; SysID</button>
+        <button class="filter-pill" type="button" data-filter="planning">Path Planning</button>
+      </div>
+
+      <!-- ==================== 2026 ==================== -->
+      <section data-year-section="2026">
+        <h2 class="pub-year-heading">2026</h2>
+        <div class="pub-list">
+
+          <!-- REACT ICRA 2026 -->
+          <article class="pub-card" data-tags="conference planning">
+            <div class="pub-thumb">
+              <img src="/assets/media/react.gif" alt="REACT Tethered ROV Coverage Planning">
+              <span class="gif-badge">GIF</span>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://abdelhakim96.github.io/REACT/" target="_blank" rel="noopener">REACT: Real-Time Entanglement-Aware Coverage Path Planning for Tethered Underwater Vehicles</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong>, M. Mehndiratta, Y. Brodskiy, B. Wehbe, and E. Kayacan</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">IEEE International Conference on Robotics and Automation (ICRA), 2026</span>
+                <span class="venue-tag venue-tag--conf">ICRA 2026</span>
+              </div>
+              <p class="pub-tldr">Real-time 3D coverage replanning with a geometric catenary/polyhedral tether model that prevents cable snagging around complex underwater structures.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://arxiv.org/abs/2507.10204" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Paper</a>
+                <a class="pub-btn" href="https://doi.org/10.1109/icra57385.2026.11696490" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI</a>
+                <a class="pub-btn" href="https://abdelhakim96.github.io/REACT/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Project Page</a>
+                <a class="pub-btn" href="https://github.com/abdelhakim96/REACT" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-react2026"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-react2026">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@inproceedings{amer2026react,
+  author    = {Amer, Abdelhakim and Mehndiratta, Mohit and Brodskiy, Yury and Wehbe, Bilal and Kayacan, Erdal},
+  title     = {REACT: Real-Time Entanglement-Aware Coverage Path Planning for Tethered Underwater Vehicles},
+  booktitle = {2026 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages     = {6486--6493},
+  year      = {2026},
+  doi       = {10.1109/icra57385.2026.11696490}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dynamic System Emulation 2026 -->
+          <article class="pub-card" data-tags="preprint mpc">
+            <div class="pub-thumb">
+              <img src="/assets/media/dfl_cuban8.gif" alt="Fixed-Wing Flight Emulation on a Multicopter">
+              <span class="gif-badge">GIF</span>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2609.06520" target="_blank" rel="noopener">Dynamic System Emulation: Fixed Wing Dynamics on a Multicopter</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong> and A. Sarabakha</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">arXiv preprint arXiv:2609.06520, 2026</span>
+                <span class="venue-tag venue-tag--preprint">Preprint</span>
+              </div>
+              <p class="pub-tldr">Exact dynamic feedback linearization with singularity-robust inversion and a reference governor enabling a gimballed multicopter to emulate aerobatic fixed-wing camera viewpoints.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://arxiv.org/abs/2609.06520" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> arXiv</a>
+                <a class="pub-btn" href="https://arxiv.org/pdf/2609.06520" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> PDF</a>
+                <a class="pub-btn" href="https://github.com/abdelhakim96/Ghost_Tracking_DFL" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-dfl2026"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-dfl2026">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@article{amer2026emulation,
+  author  = {Amer, Abdelhakim and Sarabakha, Andriy},
+  title   = {Dynamic System Emulation: Fixed Wing Dynamics on a Multicopter},
+  journal = {arXiv preprint arXiv:2609.06520},
+  year    = {2026}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- SeaVis AIM 2026 -->
+          <article class="pub-card" data-tags="conference mpc">
+            <div class="pub-thumb">
+              <img src="/assets/media/seavis.png" alt="SeaVis Remotely Operated Towed Vehicle">
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://arxiv.org/abs/2605.14683" target="_blank" rel="noopener">SeaVis: Modeling and Control of a Remotely Operated Towed Vehicle for Seabed Visualization and Mapping</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong>, A. Alstrup, F. Rasmussen, Y. Brodskiy, A. Sarabakha, and E. Kayacan</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM), 2026</span>
+                <span class="venue-tag venue-tag--conf">AIM 2026</span>
+              </div>
+              <p class="pub-tldr">Hydrodynamic modeling and gain-scheduled LQR depth/attitude control of a towed seabed mapping vehicle across varying tow speeds.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://arxiv.org/abs/2605.14683" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> arXiv</a>
+                <a class="pub-btn" href="https://doi.org/10.1109/aim65483.2026.11658265" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-seavis2026"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-seavis2026">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@inproceedings{amer2026seavis,
+  author    = {Amer, Abdelhakim and Alstrup, Aske and Rasmussen, Frederik and Brodskiy, Yury and Sarabakha, Andriy and Kayacan, Erdal},
+  title     = {SeaVis: Modeling and Control of a Remotely Operated Towed Vehicle for Seabed Visualization and Mapping},
+  booktitle = {2026 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)},
+  year      = {2026},
+  doi       = {10.1109/aim65483.2026.11658265}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ==================== 2025 ==================== -->
+      <section data-year-section="2025">
+        <h2 class="pub-year-heading">2025</h2>
+        <div class="pub-list">
+
+          <!-- TCST 2025 DF-GP-MPC -->
+          <article class="pub-card" data-tags="journal mpc learning">
+            <div class="pub-thumb">
+              <img src="/assets/media/dfgpmpc_rov.gif" alt="Online Dynamic Forgetting GP-MPC on BlueROV2">
+              <span class="gif-badge">GIF</span>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://doi.org/10.1109/TCST.2025.3539218" target="_blank" rel="noopener">Empowering Autonomous Underwater Vehicles Using Learning-Based Model Predictive Control With Dynamic Forgetting Gaussian Processes</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong>, M. Mehndiratta, Y. Brodskiy, and E. Kayacan</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">IEEE Transactions on Control Systems Technology (TCST), Vol. 33, No. 5, pp. 1913–1920, 2025</span>
+                <span class="venue-tag venue-tag--journal">IEEE TCST</span>
+              </div>
+              <p class="pub-tldr">Online sparse Gaussian process residual learning with information-driven dynamic forgetting inside real-time NMPC, validated on hardware AUV experiments under unknown currents and payload changes.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://doi.org/10.1109/TCST.2025.3539218" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Paper (DOI)</a>
+                <a class="pub-btn" href="/assets/images/rov.mp4" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play"></i> Experiment Video</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-tcst2025"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-tcst2025">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@article{amer2025empowering,
+  author  = {Amer, Abdelhakim and Mehndiratta, Mohit and Brodskiy, Yury and Kayacan, Erdal},
+  title   = {Empowering Autonomous Underwater Vehicles Using Learning-Based Model Predictive Control With Dynamic Forgetting Gaussian Processes},
+  journal = {IEEE Transactions on Control Systems Technology},
+  volume  = {33},
+  number  = {5},
+  pages   = {1913--1920},
+  year    = {2025},
+  doi     = {10.1109/TCST.2025.3539218}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- TSMC 2025 Quadrotor GP-ARC -->
+          <article class="pub-card" data-tags="journal mpc learning">
+            <div class="pub-thumb">
+              <img class="contain-fig" src="/assets/media/quad_gparc.png" alt="Quadrotor Adaptive Robust Control with Gaussian Processes">
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://doi.org/10.1109/TSMC.2025.3539707" target="_blank" rel="noopener">Adaptive Robust Control Integrated With Gaussian Processes for Quadrotors: Enhanced Accuracy, Fault Tolerance and Anti-Disturbance</a>
+              </h3>
+              <p class="pub-authors">W. Liang, <strong>A. Amer</strong>, M. Mehndiratta, Z. Chen, B. Yao, and E. Kayacan</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">IEEE Transactions on Systems, Man, and Cybernetics: Systems, Vol. 55, No. 5, pp. 3235–3248, 2025</span>
+                <span class="venue-tag venue-tag--journal">IEEE TSMC</span>
+              </div>
+              <p class="pub-tldr">Combines parametric adaptive robust control with nonparametric GP disturbance learning for fault-tolerant quadrotor tracking under rotor loss and wind gusts.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://doi.org/10.1109/TSMC.2025.3539707" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Paper (DOI)</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-tsmc2025"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-tsmc2025">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@article{liang2025adaptive,
+  author  = {Liang, Wei and Amer, Abdelhakim and Mehndiratta, Mohit and Chen, Zheng and Yao, Bin and Kayacan, Erdal},
+  title   = {Adaptive Robust Control Integrated With Gaussian Processes for Quadrotors: Enhanced Accuracy, Fault Tolerance and Anti-Disturbance},
+  journal = {IEEE Transactions on Systems, Man, and Cybernetics: Systems},
+  volume  = {55},
+  number  = {5},
+  pages   = {3235--3248},
+  year    = {2025},
+  doi     = {10.1109/TSMC.2025.3539707}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- IJCNN 2025 PINNs -->
+          <article class="pub-card" data-tags="conference learning">
+            <div class="pub-thumb">
+              <img class="contain-fig" src="/assets/media/pinn_rov.png" alt="Physics-Informed Neural Networks with Control for Underwater Vehicles">
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://doi.org/10.1109/ijcnn64981.2025.11228873" target="_blank" rel="noopener">Modelling of Underwater Vehicles Using Physics-Informed Neural Networks With Control</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong>, D. Felsager, Y. Brodskiy, and A. Sarabakha</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">International Joint Conference on Neural Networks (IJCNN), pp. 1–8, 2025</span>
+                <span class="venue-tag venue-tag--conf">IJCNN 2025</span>
+              </div>
+              <p class="pub-tldr">Embeds 6-DOF Fossen hydrodynamics into Physics-Informed Neural Networks with exogenous control inputs (PINC) for sample-efficient multi-step rollout prediction.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://doi.org/10.1109/ijcnn64981.2025.11228873" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Paper (DOI)</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-ijcnn2025"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-ijcnn2025">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@inproceedings{amer2025pinn,
+  author    = {Amer, Abdelhakim and Felsager, Daniel and Brodskiy, Yury and Sarabakha, Andriy},
+  title     = {Modelling of Underwater Vehicles Using Physics-Informed Neural Networks With Control},
+  booktitle = {2025 International Joint Conference on Neural Networks (IJCNN)},
+  pages     = {1--8},
+  year      = {2025},
+  doi       = {10.1109/ijcnn64981.2025.11228873}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- PhD Dissertation 2025 -->
+          <article class="pub-card" data-tags="thesis mpc learning planning">
+            <div class="pub-thumb">
+              <img src="/assets/images/mpc.gif" alt="PhD Dissertation Aarhus University">
+              <span class="gif-badge">GIF</span>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://scholar.google.com/citations?user=kwstCR0AAAAJ&hl=en" target="_blank" rel="noopener">Autonomous Marine Robots Optimal Control and Path Planning with Data-Driven Models</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong></p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">Ph.D. Dissertation, Department of Electrical and Computer Engineering, Aarhus University, 2025</span>
+                <span class="venue-tag venue-tag--preprint">Ph.D. Thesis</span>
+              </div>
+              <p class="pub-tldr">Industrial Ph.D. thesis uniting realistic simulation, physics-informed &amp; Gaussian process model learning, real-time NMPC, and tether-aware 3D coverage planning for marine robots.</p>
+              <div class="pub-links">
+                <button class="pub-btn" type="button" data-bib-toggle="bib-phd2025"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-phd2025">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@phdthesis{amer2025phd,
+  author = {Amer, Abdelhakim},
+  title  = {Autonomous Marine Robots Optimal Control and Path Planning with Data-Driven Models},
+  school = {Aarhus University},
+  year   = {2025}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ==================== 2023 ==================== -->
+      <section data-year-section="2023">
+        <h2 class="pub-year-heading">2023</h2>
+        <div class="pub-list">
+
+          <!-- UNav-Sim ICAR 2023 -->
+          <article class="pub-card" data-tags="conference">
+            <div class="pub-thumb">
+              <img src="/assets/media/unavsim.gif" alt="UNav-Sim Underwater Robotics Simulator">
+              <span class="gif-badge">GIF</span>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://github.com/open-airlab/UNav-Sim" target="_blank" rel="noopener">UNav-Sim: A Visually Realistic Underwater Robotics Simulator and Synthetic Data-Generation Framework</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong>, O. Álvarez-Tuñón, H. İ. Uğurlu, J. L. F. Sejersen, Y. Brodskiy, and E. Kayacan</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">21st IEEE International Conference on Advanced Robotics (ICAR), pp. 570–576, 2023</span>
+                <span class="venue-tag venue-tag--conf">ICAR 2023</span>
+              </div>
+              <p class="pub-tldr">Open-source Unreal Engine 5 + AirSim underwater robotics simulator with hydrodynamic models, ROS 1/2 navigation stack, and synthetic vision/sonar dataset generation.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://doi.org/10.1109/icar58858.2023.10406819" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Paper (DOI)</a>
+                <a class="pub-btn" href="https://github.com/open-airlab/UNav-Sim" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-unavsim2023"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-unavsim2023">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@inproceedings{amer2023unavsim,
+  author    = {Amer, Abdelhakim and {\'A}lvarez-Tu{\~n}{\'o}n, Olaya and U{\u{g}}urlu, Halil {\.I}brahim and Sejersen, Jonas le Fevre and Brodskiy, Yury and Kayacan, Erdal},
+  title     = {UNav-Sim: A Visually Realistic Underwater Robotics Simulator and Synthetic Data-Generation Framework},
+  booktitle = {2023 21st International Conference on Advanced Robotics (ICAR)},
+  pages     = {570--576},
+  year      = {2023},
+  doi       = {10.1109/icar58858.2023.10406819}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- VT-NMPC ICAR 2023 -->
+          <article class="pub-card" data-tags="conference mpc planning">
+            <div class="pub-thumb">
+              <img src="/assets/media/vtmpc_opt.gif" alt="VT-NMPC Autonomous Wind Turbine Inspection">
+              <span class="gif-badge">GIF</span>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="https://doi.org/10.1109/icar58858.2023.10406329" target="_blank" rel="noopener">Visual Tracking Nonlinear Model Predictive Control Method for Autonomous Wind Turbine Inspection</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong>, M. Mehndiratta, J. L. F. Sejersen, H. X. Pham, and E. Kayacan</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">21st IEEE International Conference on Advanced Robotics (ICAR), pp. 431–438, 2023</span>
+                <span class="venue-tag venue-tag--conf">ICAR 2023</span>
+              </div>
+              <p class="pub-tldr">Perception-aware nonlinear MPC keeping wind turbine blades centered in camera view while maintaining safe standoff distance under wind disturbances.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="https://doi.org/10.1109/icar58858.2023.10406329" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Paper (DOI)</a>
+                <a class="pub-btn" href="https://github.com/open-airlab/VTNMPC-Autonomous-Wind-Turbine-Inspection" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+                <a class="pub-btn" href="/assets/images/vtmpc.mp4" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play"></i> Video</a>
+                <button class="pub-btn" type="button" data-bib-toggle="bib-vtnmpc2023"><i class="fa-solid fa-quote-right"></i> BibTeX</button>
+              </div>
+              <div class="bibtex-drawer" id="bib-vtnmpc2023">
+                <button class="copy-bib-btn" type="button">Copy</button>
+                <pre>@inproceedings{amer2023vtnmpc,
+  author    = {Amer, Abdelhakim and Mehndiratta, Mohit and Sejersen, Jonas le Fevre and Pham, Hung Xuan and Kayacan, Erdal},
+  title     = {Visual Tracking Nonlinear Model Predictive Control Method for Autonomous Wind Turbine Inspection},
+  booktitle = {2023 21st International Conference on Advanced Robotics (ICAR)},
+  pages     = {431--438},
+  year      = {2023},
+  doi       = {10.1109/icar58858.2023.10406329}
+}</pre>
+              </div>
+            </div>
+          </article>
+
+          <!-- MUDROV IROS 2023 Workshop -->
+          <article class="pub-card" data-tags="preprint">
+            <div class="pub-thumb">
+              <img src="/assets/media/unavsim_ocean.gif" alt="MUDROV Underwater Defouling ROV">
+              <span class="gif-badge">GIF</span>
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">MUDROV: A Modular Underwater Defouling ROV for Ship Propeller Cleaning</h3>
+              <p class="pub-authors"><strong>A. Amer</strong>, O. Álvarez-Tuñón, D. Felsager, Y. Brodskiy, and E. Kayacan</p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">Advanced Marine Robotics Workshop, IEEE/RSJ IROS, 2023</span>
+                <span class="venue-tag venue-tag--preprint">IROS Workshop</span>
+              </div>
+              <p class="pub-tldr">Compact, modular 3D-printed underwater vehicle architecture designed for agile close-proximity ship propeller biofouling inspection and cleaning.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ==================== 2021 ==================== -->
+      <section data-year-section="2021">
+        <h2 class="pub-year-heading">2021</h2>
+        <div class="pub-list">
+
+          <!-- MSc Thesis 2021 -->
+          <article class="pub-card" data-tags="thesis">
+            <div class="pub-thumb">
+              <img class="contain-fig" src="/assets/images/delft.png" alt="TU Delft MSc Thesis">
+            </div>
+            <div class="pub-body">
+              <h3 class="pub-title">
+                <a href="/assets/documents/Bio_Inspired_Design.pdf" target="_blank" rel="noopener">Shape Optimization of a Flapping Wing for the Atalanta Project FWMAV</a>
+              </h3>
+              <p class="pub-authors"><strong>A. Amer</strong></p>
+              <div class="pub-venue-row">
+                <span class="pub-venue">M.Sc. Thesis, Delft University of Technology (TU Delft), 2021</span>
+                <span class="venue-tag venue-tag--preprint">M.Sc. Thesis</span>
+              </div>
+              <p class="pub-tldr">Fluid-structure numerical modeling and aerodynamic wing-planform optimization for bio-inspired flapping-wing micro air vehicles.</p>
+              <div class="pub-links">
+                <a class="pub-btn" href="/assets/documents/Bio_Inspired_Design.pdf" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> Report PDF</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    &copy; 2026 Abdelhakim Amer &middot; Hosted on GitHub Pages
+  </footer>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>
